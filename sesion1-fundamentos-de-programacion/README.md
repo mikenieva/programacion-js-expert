@@ -1,1 +1,1 @@
-## Sesiones para estudiantes
+## Sesiones para expertos
