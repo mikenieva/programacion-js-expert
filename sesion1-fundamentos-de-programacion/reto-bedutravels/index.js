@@ -6,7 +6,7 @@ const usuario = {
     apellido: "Nieva"
 }
 
-const buscarToursPorPais = (toursArray, countryString) => {
+const searchTour = (toursArray, countryString) => {
     for(i=0; i<toursArray.length; i++){
         const paisEncontrado = toursArray[i].hasOwnProperty(countryString)
         if(paisEncontrado) {
@@ -17,7 +17,7 @@ const buscarToursPorPais = (toursArray, countryString) => {
     return []
 }
 
-const toursCOL = buscarToursPorPais(tours.tours, "COL")
+const toursCOL = searchTour(tours.tours, "COL")
 
 console.log(toursCOL)
 console.log(`${usuario.nombre} encontró ${toursCOL.length} tours en Colombia`)
